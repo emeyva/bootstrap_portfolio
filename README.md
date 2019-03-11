@@ -1,11 +1,7 @@
-# personal_webpage
-Testing HTML, CSS and Javascript
+# bootstrap_portfolio
+Testing HTML and Bootstrap
 
-Personal Webpage
-
-HTML
-CSS
-JAVASCRIPT
+Personal Portfolio
 
 under development
 # bootstrap_portfolio
