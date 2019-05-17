@@ -14,9 +14,30 @@ footer {
 	padding: 20px 0;
   background-color: #000;
   text-align: center;
-  height: 75px;
+  height: 80px;
 	width: 100%;
   text
+}
+.navbar{
+  opacity: 0.8;
+}
+
+.gitproject{
+  text-align: center;
+  padding-right: 420px;
+  padding-top: 25px;
+}
+
+.cvpage {
+  text-align: center;
+  height: 1200px;
+  padding-top: 50px;
+
+}
+
+.cvslide {
+  height: 1200px;
+  padding: 25px 500px 25px 500px;
 }
 
 .logotype{
@@ -24,20 +45,42 @@ footer {
 }
 
 .anchorTab{
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 .homepage {
   text-align: center;
   width: 100%;
   height: 500px;
+}
 
+.perfil {
+  text-align: center;
+}
+
+.git{
+  margin: auto;
+}
+
+.row{
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.projects{
+  width: 100%;
+  height: 1380px;
+}
+
+.skills{
+  padding-top: 80px;
 }
 
 .welcome {
   text-align: center;
   width: 100%;
-  height: 720px;
-  padding-top: 50px;
-  padding: 25px 400px 25px 400px;
+  height: 1010px;
+  padding-top: 10px;
+  padding: 10px 250px 0px 250px;
+
 }
