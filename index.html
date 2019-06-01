@@ -5,6 +5,8 @@
   <title>Eurico Mey Vaz</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <link rel="icon" href="logos/logo_e_tri.png">
 </head>
 
@@ -12,7 +14,7 @@
   <header>
     <nav class="navbar shadow navbar-expand-lg navbar-light bg-light fixed-top">
       <a href="#">
-        <img class="p-1 logotype" src="logos/logo_e_tri.png" alt="testecartoon2" style="width:50px;height:50px;">
+        <img class="p-1 logotype" src="logos/menu_1.png" alt="testecartoon2" style="width:50px;height:50px;">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -53,9 +55,10 @@
 
   <div class="anchorTab" id="home">
     <div class="homepage pt-100">
-      <img src="logos/logo_e_tri.png" alt="Profile Picture" style="width:300px;height:300px;">
-      <h2 class="pt-5" id="simpleUsage"></h2>
+      <img class="animated flipInX" src="logos/logo_e_tri.png" alt="Profile Picture" style="width:300px;height:300px;">
+      <h2 class="pt-5" id="simpleUsage">Welcome to my portfolio!</h2>
     </div>
+    <div class="animated fadeInUp">
     <div class="pd-3 text-center">
       <a href="#cv">
         <button type="button" class="btn btn-dark btn-lg ">Curriculum Vitae</button>
@@ -64,6 +67,7 @@
     <a href="#cv">
       <img class="pt-4" src="./icons/down.svg" alt="cv2" style="width:50px;height:50px;">
     </a>
+    </div>
 
   </div>
 
@@ -75,10 +79,10 @@
       <div class="container pt-2 ">
         <div class="row row-flex">
           <div class="col">
-            <img class="col m-1" src="EuricoPintoCVeng-1.png" alt="cv1">
+            <img id="cvLeft" class="col m-1" src="EuricoPintoCVeng-1.png" alt="cv1">
           </div>
           <div class="col">
-            <img class="col m-1" src="EuricoPintoCVeng-2.png" alt="cv2">
+            <img id="cvRight" class="col m-1" src="EuricoPintoCVeng-2.png" alt="cv2">
           </div>
         </div>
       </div>
@@ -98,7 +102,8 @@
 
 
 
-  <div class="anchorTab" id="aboutme" data-aos="fade-up">
+  <div  class="anchorTab" id="aboutme" data-aos="fade-up">
+
     <div class="perfil">
       <img src="./euri_perfil.png" alt="Profile Picture" style="width:300px;height:300px;">
     </div>
@@ -141,7 +146,7 @@
 
 
   <div class="anchorTab" id="uni">
-    <div class="pt-5 pb-5 projects bg-light text-center">
+    <div class="pt-5 pb-5 projects bg-light text-center" id="uniSection">
       <h1 class="text-center">Academic & Personal Projects</h1>
       <h5 class="pt-5 pb-5 text-center">Most projects available at my Github page</h5>
       <a class="github-button git" href="https://github.com/emeyva" data-size="large" aria-label="Follow @emeyva on GitHub">Follow @emeyva</a>
@@ -230,7 +235,7 @@
   </div>
   </div>
 
-
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./jquery-1.10.2.min.js"></script>
   <script src="./jquery.localScroll.js"></script>
   <script src="./jquery.scrollTo.js"></script>
@@ -241,33 +246,60 @@
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typeit@5/dist/typeit.min.js"></script>
-
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+  </script>
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('#cvLeft', {
+      duration: 2000,
+      origin: 'left',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#cvRight', {
+      duration: 2000,
+      origin: 'right',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#aboutme', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '100px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#uniSection', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#contact', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '300px',
+      viewFactor: 0.2
+    });
+  </script>
   <script>
     new TypeIt('#simpleUsage',{
         speed: 45,
         startDelay: 900
       })
-      .type('Welcome to my portfolio!')
-      .pause(700)
-      .delete(25)
+      .pause(1500)
+      .delete(10)
       .pause(350)
-      .type('Feel free to check my CV')
-      .pause(750)
-      .delete(45)
-      .pause(250)
-      .type('Just click the button below')
+      .type('web portfolio!')
       .go();
-
   </script>
+
 
 
   </div>
-  <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 4000,
-    });
-  </script>
+
 </body>
 <footer>
   <a href="#">
