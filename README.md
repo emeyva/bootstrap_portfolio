@@ -13,7 +13,7 @@ These instructions will get you a copy of my personal website project up and run
 Clone this repository
 
 ```
-https://github.com/emeyva/bootstrap_portfolio
+git clone https://github.com/emeyva/bootstrap_portfolio
 ```
 
 Install Atom or Visual Code
