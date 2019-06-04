@@ -1,6 +1,6 @@
 # Personal Website
 
-![alt text](https://github.com/emeyva/bootstrap_portfolio/blob/master/weblayout3.png)
+![alt text](https://github.com/emeyva/bootstrap_portfolio/blob/master/image_assets/web_image/weblayout3.png)
 
 Testing HTML, CSS, Javascript, Jquery and Bootstrap
 
