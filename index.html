@@ -3,10 +3,12 @@
 
 <head>
   <title>Eurico Mey Vaz</title>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <link rel="icon" href="image_assets/logos/logo_e_tri.png">
 </head>
 
@@ -16,6 +18,7 @@
       <a href="#">
         <img class="p-1 logotype" src="image_assets/logos/menu_1.png" alt="testecartoon2" style="width:50px;height:50px;">
       </a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -23,7 +26,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
 
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#cv">Curriculum</a>
           </li>
           <li class="nav-item">
@@ -55,13 +58,13 @@
 
   <div class="anchorTab" id="home">
     <div class="homepage pt-100">
-      <img class="animated flipInX" src="image_assets/logos/logo_e_tri.png" alt="Profile Picture" style="width:300px;height:300px;">
-      <h2 class="pt-5" id="simpleUsage"></h2>
+      <img class="animated fadeIn" src="image_assets/logos/logo_e_tri.png" alt="Profile Picture" style="width:300px;height:300px;">
+      <h1 class="pt-5 pardesc" id="simpleUsage"></h1>
     </div>
     <div class="animated fadeInUp">
     <div class="pd-3 text-center">
       <a href="#cv">
-        <button type="button" class="btn btn-dark btn-lg ">Curriculum Vitae</button>
+        <button type="button" class="btn btn-outline-dark btn-lg">Curriculum Vitae</button>
       </a>
     </div>
     <a href="#cv">
@@ -75,7 +78,7 @@
 
   <div class="anchorTab" id="cv">
     <div class="cvpage bg-light pt-5">
-      <h1 class="pb-2">Curriculum Vitae</h1>
+      <h1 class="pb-2 pardesc">Curriculum Vitae</h1>
       <div class="container pt-2 ">
         <div class="row row-flex justify-content-center">
           <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6">
@@ -86,10 +89,8 @@
           </div>
         </div>
       </div>
-      <div class="pt-5 text-center pt-0">
+      <div class="pt-5 text-center pt-0" >
         <a href="cv_zip/euricopintocv.zip">
-
-
           <img src="image_assets/icons/download.svg" alt="cv2" style="width:40px;height:40px;">
         </a>
       </div>
@@ -104,21 +105,24 @@
 
   <div  class="anchorTab" id="aboutme" data-aos="fade-up">
 
-    <div class="perfil">
+    <div class="perfil" id="perfilpic">
       <img src="image_assets/profile_image/euri_perfil.png" alt="Profile Picture" style="width:300px;height:300px;">
     </div>
     <div class="welcome">
-      <h1>About me</h1>
-      <blockquote class="blockquote text-center">
-        <h3 class="pt-5 mb-0 align-middle">Hard-working undergraduate studying Computers
-          with Electronics in University of Essex who is
-          fearless of new challenges and continuously ready
-          to encounter new opportunities. Ambitious individual
-          looking for a full-time job to show his own talent.</h3>
-      </blockquote>
+      <div id="about-me-desc">
+        <h1 class="pardesc"><strong>About me</strong></h1>
+
+          <h2 class="pt-5 mb-0 align-middle pardesc">Hard-working undergraduate studying Computers
+            with Electronics in University of Essex who is
+            fearless of new challenges and continuously ready
+            to encounter new opportunities. Ambitious individual
+            looking for a full-time job to show his own talent.</h2>
+      </div>
+
+
       <div class="anchorTab" id="skills" data-aos="fade-up">
-        <div class="container skills text-center">
-          <h1>Skills</h1>
+        <div class="container skills text-center mt-5">
+          <h1 class="pardesc"><strong>Skills</strong></h1>
           <div class="row pt-5">
             <div class="col-sm">
               <img src="image_assets/languages/java_img.png" alt="Profile Picture" style="width:100px;height:100px;"> </div>
@@ -147,49 +151,51 @@
 
   <div class="anchorTab" id="uni">
     <div class="pt-5 pb-5 projects bg-light text-center" id="uniSection">
-      <h1 class="text-center">Academic & Personal Projects</h1>
-      <h5 class="pt-5 pb-5 text-center">Most projects available at my Github page</h5>
-      <a class="github-button git" href="https://github.com/emeyva" data-size="large" aria-label="Follow @emeyva on GitHub">Follow @emeyva</a>
+      <div id="uni-title">
+        <h1 class="text-center pardesc"><strong>Academic & Personal Projects</strong></h1>
+        <h4 class="pt-5 pb-5 text-center pardesc">Most projects available at my Github page</h4>
+        <a class="github-button git" href="https://github.com/emeyva" data-size="large" aria-label="Follow @emeyva on GitHub">Follow @emeyva</a>
+      </div>
 
       <div class="container pt-5 justify-content-center">
         <div class="row justify-content-center">
-          <div class="col- m-2 shadow">
+          <div class="col- m-2 shadow" id="row-left-1">
             <div class="card" style="width: 16rem;">
               <img src="image_assets/project_image/gamescreen.png" class="card-img-top" style="width:250px;height:250px;">
               <div class="card-body">
                 <h5 class="card-title">2D Arcade Game</h5>
                 <p class="card-text">Java</p>
-                <a href="https://github.com/emeyva/2d_game_java" target="_blank" class="btn btn-primary">GitHub repository</a>
+                <a href="https://github.com/emeyva/2d_game_java" target="_blank" class="btn btn-dark">GitHub repository</a>
               </div>
             </div>
           </div>
-          <div class="col- m-2 shadow">
+          <div class="col- m-2 shadow" id="row-left-2">
             <div class="card" style="width: 16rem;">
               <img src="image_assets/project_image/partimer_screen.png" class="card-img-top p-3" style="width:250px;height:250px;">
               <div class="card-body">
                 <h5 class="card-title">Partimer</h5>
                 <p class="card-text">Android Studio</p>
-                <a href="https://github.com/emeyva/partimer" target="_blank" class="btn btn-primary">GitHub repository</a>
+                <a href="https://github.com/emeyva/partimer" target="_blank" class="btn btn-dark">GitHub repository</a>
               </div>
             </div>
           </div>
-          <div class="col- m-2 shadow">
+          <div class="col- m-2 shadow" id="row-right-1">
             <div class="card" style="width: 16rem;">
               <img src="image_assets/project_image/cell.png" class="card-img-top" style="width:250px;height:250px;">
               <div class="card-body">
                 <h5 class="card-title">Malaria Detection App</h5>
                 <p class="card-text">Python, Java, XML</p>
-                <a href="https://github.com/emeyva/mobile_app_malaria_detection" target="_blank" class="btn btn-primary">GitHub repository</a>
+                <a href="https://github.com/emeyva/mobile_app_malaria_detection" target="_blank" class="btn btn-dark">GitHub repository</a>
               </div>
             </div>
           </div>
-          <div class="col- m-2 shadow">
+          <div class="col- m-2 shadow" id="row-right-2">
             <div class="card" style="width: 16rem;">
               <img src="image_assets/project_image/weblayout.png" class="card-img-top p-3" style="width:250px;height:250px;">
               <div class="card-body">
                 <h5 class="card-title">Web Portfolio</h5>
                 <p class="card-text">HTML, CSS, Javascript</p>
-                <a href="https://github.com/emeyva/bootstrap_portfolio" target="_blank" class="btn btn-primary">GitHub repository</a>
+                <a href="https://github.com/emeyva/bootstrap_portfolio" target="_blank" class="btn btn-dark">GitHub repository</a>
               </div>
             </div>
           </div>
@@ -206,9 +212,9 @@
   <div class="anchorTab" id="contact">
     <div class="contact bg-white">
       <div id="testContact">
-        <h1 class="pb-5">Contact</h1>
 
-        <div class="row text-center pt-5">
+        <h1 class="pb-5 text-center pardesc"><strong>Contact</strong></h1>
+        <div class="row text-center pt-5 pb-5">
           <div class="col-md-4">
             <a class="btn-floating blue accent-1">
               <img src="image_assets/icons/map.svg" alt="map-marker-8x" style="width:25px;height:25px;">
@@ -227,11 +233,28 @@
             <a class="btn-floating blue accent-1">
               <img src="image_assets/icons/mail.svg" alt="envelope-closed-8x" style="width:25px;height:25px;">
             </a>
-            <p class="pt-3">eurico.mey@gmail.com</p>
-            <p class="mb-0">emeyva@essex.ac.uk</p>
+            <a href="mailto:eurico.mey@gmail.com?subject=Web/App/Software Budget
+            &body=What is your budget for a Web/App/Software Development?">
+              <p class="pt-3">eurico.mey@gmail.com</p>
+            </a>
+            <a href="mailto:emeyva@essex.ac.uk?subject=Web/App/Software Budget
+            &body=What is your budget for a Web/App/Software Development?">
+              <p class="mb-0">emeyva@essex.ac.uk</p>
+            </a>
+
           </div>
         </div>
+        <div class="mt-5">
+          <a href="mailto:eurico.mey@gmail.com?subject=Web/App/Software Budget
+          &body=What is your budget for a Web/App/Software Development?">
+            <button class="btn btn-dark"><img src="image_assets/icons/out-mail-white.png" class="mr-2" style="width:30px;height:30px;"></i>Contact Me</button>
+          </a>
+
+
+        </div>
+
       </div>
+
 
 
     </div>
@@ -267,16 +290,52 @@
       distance: '300px',
       viewFactor: 0.2
     });
-    sr.reveal('#aboutme', {
+    sr.reveal('#perfilpic', {
       duration: 2000,
       origin: 'bottom',
       distance: '100px',
       viewFactor: 0.2
     });
-    sr.reveal('#uniSection', {
+    sr.reveal('#about-me-desc', {
+      duration: 2000,
+      origin: 'top',
+      distance: '100px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#skills', {
+      duration: 1000,
+      origin: 'bottom',
+      distance: '1000px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#row-left-1', {
+      duration: 2000,
+      origin: 'left',
+      distance: '900px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#row-left-2', {
+      duration: 2000,
+      origin: 'left',
+      distance: '400px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#row-right-1', {
+      duration: 2000,
+      origin: 'right',
+      distance: '400px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#row-right-2', {
+      duration: 2000,
+      origin: 'right',
+      distance: '900px',
+      viewFactor: 0.2
+    });
+    sr.reveal('#uni-title', {
       duration: 2000,
       origin: 'bottom',
-      distance: '300px',
+      distance: '100px',
       viewFactor: 0.2
     });
     sr.reveal('#testContact', {
@@ -285,16 +344,17 @@
       distance: '300px',
       viewFactor: 0.2
     });
+
   </script>
   <script>
     new TypeIt('#simpleUsage',{
-        speed: 45,
-        startDelay: 900
+        speed: 30,
+        startDelay: 0
       })
       .type('Welcome to my portfolio!')
-      .pause(1500)
+      .pause(2000)
       .delete(10)
-      .pause(350)
+      .pause(500)
       .type('web portfolio!')
       .go();
   </script>
@@ -303,7 +363,7 @@
 
 </body>
 <!-- Footer -->
-<footer class="page-footer bg-light font-small cyan darken-3">
+<footer class="page-footer bg-light font-small cyan darken-3" id="ft-low">
 
   <!-- Footer Elements -->
   <div class="container text-center justify-content-center">
@@ -341,7 +401,7 @@
         </div>
 
         <div class="mt-2 footer-copyright text-center py-2">© 2018 Copyright:
-          <a href="https://emeyva.surge.sh"> Eurico Mey Vaz Pinto</a>
+          <a href="https://emeyva.surge.sh">emeyva</a>
         </div>
       </div>
 

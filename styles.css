@@ -10,8 +10,12 @@ body{
   padding-top: 100px;
 }
 
+.pardesc{
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
 footer {
-	
+
 }
 .navbar{
   opacity: 0.8;
